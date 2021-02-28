@@ -2,7 +2,6 @@ import { useState } from 'react'
 
 import '../styles/global.css'
 
-import { ChallengesContext, ChallengesProvider } from '../contexts/ChallengesContext'
 
 function MyApp({ Component, pageProps }) {
   // const [level, setLevel] = useState(1);
@@ -18,9 +17,9 @@ function MyApp({ Component, pageProps }) {
     //DESTAQUE -> além de passar varias informações aqui, podemos até passar funções!!!
 
     //<ChallengesContext.Provider value={{ level, levelUp }}>
-    <ChallengesProvider>
-      <Component {...pageProps} />
-    </ChallengesProvider>
+    //<ChallengesProvider>
+    <Component {...pageProps} />
+    //</ChallengesProvider>
   )
 }
 
